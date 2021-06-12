@@ -1,0 +1,1699 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## CHAPTER 2 PROBLEMS"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### 2.1 Write Python algebraic expression corrresonding to the following statements:"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "(a) The sum of the first five positive integers"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "1+2+3+4+5"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "(b) The average age of Sara (age 23), Mark (age 19), and Fathima (age 31)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "23+19+31/3"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "(c) The number of times 73 goes into 403"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "403//73"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "(d) The remainder when 403 is divided by 7"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "403%7"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "(e) 2 to the 10th power"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "2**10"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "(f) The absolute value of the difference between Saras height (54 inches) and Marks's height (57 inches)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "abs(54-57)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "(g) The lowest price among the followinf prices: 34.99, 29.65, and 31.50"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "min(34.99,29.65,31.50)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### 2.2 Translate the following statements into Python Boolean expression and evaluate them:\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "(a) The sum of 2 and 2 is less than 4"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 9,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "False"
+      ]
+     },
+     "execution_count": 9,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    " 2+2<4"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "(b) The value of 7 // 3 is equal to 1 + 1."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "True"
+      ]
+     },
+     "execution_count": 1,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "7//3==1+1"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "(c) The sum of 3 squared and 4 squared is equal to 25."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "True"
+      ]
+     },
+     "execution_count": 2,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "a=(3**2)+(4**2)\n",
+    "b=25\n",
+    "a==b"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "(d) The sum of 2, 4, and 6 is greater than 12."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "False"
+      ]
+     },
+     "execution_count": 3,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "a=2+4+6\n",
+    "a>12"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "(e) 1, 387 is divisible by 19."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "True"
+      ]
+     },
+     "execution_count": 4,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "1387%19==0"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "(f) 31 is even. (Hint: what does the remainder when you divide by 2 tell you?)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "False"
+      ]
+     },
+     "execution_count": 5,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "31%2==0"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "(g) The lowest price among  34.99, 29.95, and 31.50 is less than 30.00."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 6,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "True"
+      ]
+     },
+     "execution_count": 6,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "min(34.99, 29.95,31.50)<30.00"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### 2.3 Write Python statements that correspond to the below actions and execute them:"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "(a) Assign integer value 3 to variable a."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 6,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "3\n"
+     ]
+    },
+    {
+     "data": {
+      "text/plain": [
+       "int"
+      ]
+     },
+     "execution_count": 6,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "a=3\n",
+    "print(a)\n",
+    "type(a)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "(b) Assign 4 to variable b."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 7,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "4\n"
+     ]
+    }
+   ],
+   "source": [
+    "b=4\n",
+    "print(b)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "(c) Assign to variable c the value of expression (a.a) + (b.b)."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 8,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "25\n"
+     ]
+    }
+   ],
+   "source": [
+    "c=(a*a)+(b*b)\n",
+    "print(c)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### 2.4 Start by executing the assignment statements:\n",
+    "\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 12,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "s1= 'ant'\n",
+    "s2= 'bat'\n",
+    "s3= 'cod'"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "Write Python expressions using s1, s2, and s3 and operators + and * that evaluate to:\n",
+    "\n",
+    "    (a) 'ant bat cod'\n",
+    "    (b) 'ant ant ant ant ant ant ant ant ant ant '\n",
+    "    (c) 'ant bat bat cod cod cod'\n",
+    "    (d) 'ant bat ant bat ant bat ant bat ant bat ant bat ant bat '\n",
+    "    (e) 'batbatcod batbatcod batbatcod batbatcod batbatcod '"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 23,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "(a): ant bat cod\n",
+      "(b): ant ant ant ant ant ant ant ant ant ant \n",
+      "(c): ant bat bat cod cod cod \n",
+      "(d): ant bat ant bat ant bat ant bat ant bat ant bat ant bat \n",
+      "(e): batbatcod batbatcod batbatcod batbatcod batbatcod \n"
+     ]
+    }
+   ],
+   "source": [
+    "print('(a):',s1+' '+s2+' '+s3)\n",
+    "print('(b):',(s1+' ')*10)\n",
+    "print('(c):',(s1+' '+(s2+' ')*2+(s3+' ')*3))\n",
+    "print('(d):',(s1+' '+s2+' ')*7)\n",
+    "print('(e):',(s2+s2+s3+' ')*5)\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### 2.5 Start by executing the assignment:\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 35,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "0123456789\n"
+     ]
+    }
+   ],
+   "source": [
+    "s= '0123456789'\n",
+    "print(s)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "Now write expressions using string s and the indexing operator that evaluate to:\n",
+    "\n",
+    "    (a) '0'\n",
+    "    (b) '1'\n",
+    "    (c) '6'\n",
+    "    (d) '8'\n",
+    "    (e) '9'"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 41,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "(a): 0\n",
+      "(b): 1\n",
+      "(c): 6\n",
+      "(d): 8\n",
+      "(e): 9\n"
+     ]
+    }
+   ],
+   "source": [
+    "print('(a):',s[0])\n",
+    "print('(b):',s[1])\n",
+    "print('(c):',s[6])\n",
+    "print('(d):',s[8])\n",
+    "print('(e):',s[9])\n",
+    "\n",
+    "\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### 2.6 First execute the assignment\n",
+    "\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 42,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "words = [ 'bat' , 'ball' , 'barn' , 'basket' , 'badminton' ]"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "Now write two Python expressions that evaluate to the first and last, respectively, word in\n",
+    "words, in dictionary order."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 45,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "badminton\n",
+      "bat\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(min(words))\n",
+    "print(max(words))"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### 2.7 Given the list of student homework grades\n",
+    "\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 46,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "grades = [9, 7, 7, 10, 3, 9, 6, 6, 2]"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "write:\n",
+    "\n",
+    "    (a) An expression that evaluates to the number of 7 grades\n",
+    "    (b) A statement that changes the last grade to 4\n",
+    "    (c) An expression that evaluates to the maximum grade\n",
+    "    (d) A statement that sorts the list grades\n",
+    "    (e) An expression that evaluates to the average grade"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 57,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "(a): 2\n",
+      "(b): 4\n",
+      "(c): 9\n",
+      "(d): [3, 4, 4, 4, 6, 6, 7, 7, 9]\n",
+      "(e): 5.555555555555555\n"
+     ]
+    }
+   ],
+   "source": [
+    "print('(a):',grades.count(7))\n",
+    "grades[-1]=4\n",
+    "print('(b):',grades[-1])\n",
+    "print('(c):',max(grades))\n",
+    "grades.sort()\n",
+    "print('(d):',grades)\n",
+    "print('(e):',sum(grades)/len(grades))"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### 2.8 In what order are the operators in the below expressions evaluated?\n",
+    "\n",
+    "    (a) 2 + 3 == 4 or a >= 5\n",
+    "    (b) lst[1] * -3 < -10 == 0\n",
+    "    (c) (lst[1] * -3 < -10) in [0, True]\n",
+    "    (d) 2 * 3**2\n",
+    "    (e) 4 / 2 in [1, 2, 3]"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "    (a) ((2 + 3) == 4) or (a >= 5)\n",
+    "    (b) ((lst[1]) * (-3 < -10)) == (0)\n",
+    "    (c) ((lst[1]) * (-3 < -10)) in [0, True]\n",
+    "    (d) (2) * (3**2)\n",
+    "    (e) (4 / 2) in [1, 2, 3]"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### 2.9 What is the type of the object that these expressions evaluate to?\n",
+    "    (a) False + False\n",
+    "    (b) 2 * 3**2.0\n",
+    "    (c) 4 // 2 + 4 % 2\n",
+    "    (d) 2 + 3 == 4 or 5 >= 5"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 61,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "<class 'int'>\n",
+      "<class 'float'>\n",
+      "<class 'int'>\n",
+      "<class 'bool'>\n"
+     ]
+    }
+   ],
+   "source": [
+    "a= False + False\n",
+    "print(type(a))\n",
+    "b=2 * 3**2.0\n",
+    "print(type(b))\n",
+    "c=4 // 2 + 4 % 2\n",
+    "print(type(c))\n",
+    "d=2 + 3 == 4 or 5 >= 5\n",
+    "print(type(d))"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### 2.10 Write Python expressions corresponding to the following:\n",
+    "    (a) The length of the hypotenuse in a right triangle whose other two sides have lengths\n",
+    "    a and b\n",
+    "    (b) The value of the expression that evaluates whether the length of the above hypotenuse\n",
+    "    is 5\n",
+    "    (c) The area of a disk of radius a\n",
+    "    (d) The value of the Boolean expression that checks whether a point with coordinates x\n",
+    "    and y is inside a circle with center (a, b) and radius r"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 15,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "(a): 5.0\n",
+      "(b): True\n",
+      "(c): 28.274333882308138\n",
+      "(d): (x-a)**2 + (y-b)**2 < r**2\n"
+     ]
+    }
+   ],
+   "source": [
+    "import math\n",
+    "print('(a):',(math.sqrt(a**2 + b**2)))\n",
+    "print('(b):',math.sqrt(a**2 + b**2)==5)\n",
+    "print('(c):',math.pi*(a**2))\n",
+    "print('(d): (x-a)**2 + (y-b)**2 < r**2')\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### 2.11 Write Python expressions corresponding to these statements:\n",
+    "\n",
+    "    (a) The sum of the first seven positive integers\n",
+    "    (b) The average age of Sara (age 65), Fatima (57), and Mark (age 45)\n",
+    "    (c) 2 to the 20th power\n",
+    "    (d) The number of times 61 goes into 4356\n",
+    "    (e) The remainder when 4365 is divided by 61\n",
+    "\n",
+    "\n",
+    "\n",
+    "\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 41,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "(a): 28\n",
+      "(b): Average =  55.666666666666664\n",
+      "(c): 1048576\n",
+      "(d): 71\n",
+      "(e): 25\n"
+     ]
+    }
+   ],
+   "source": [
+    "print('(a):',1+2+3+4+5+6+7)\n",
+    "age=[65,57,45]\n",
+    "print('(b): Average = ',(sum(age)/len(age)))\n",
+    "print('(c):',2**20)\n",
+    "print('(d):',4356//61)\n",
+    "print('(e):',4356%61)\n",
+    "\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### 2.12 Start by evaluating, in the interactive shell, the assignment:\n",
+    "\n",
+    "    Now write string expressions involving s1 and s2 and string operators + and * that evaluate\n",
+    "    to:\n",
+    "        (a) '-+'\n",
+    "        (b) '–+'\n",
+    "        (c) '+––'\n",
+    "        (d) '+––+––'\n",
+    "        (e) '+––+––+––+––+––+––+––+––+––+––+'\n",
+    "        (f) '+–+++––+–+++––+–+++––+–+++––+–+++––'\n",
+    "        Try to make your string expressions as succinct as you can."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 7,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "(a): -+\n",
+      "(b): --+\n",
+      "(c): +--\n",
+      "(d): +-+-\n",
+      "(e): +--+--+--+--+--+--+--+--+--+--\n",
+      "(f): +-+++--+-+++--+-+++--+-+++--+-+++--\n"
+     ]
+    }
+   ],
+   "source": [
+    "s1 = '-'\n",
+    "s2 = '+'\n",
+    "print('(a):',s1+s2)\n",
+    "print('(b):',s1+s1+s2)\n",
+    "print('(c):',s2+s1+s1)\n",
+    "print('(d):',(s2+s1)*2)\n",
+    "print('(e):',(s2+s1+s1)*10)\n",
+    "print('(f):',(s2+s1+(s2*3)+(s1*2))*5)\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### 2.13 Start by running, in the shell, the following assignment statement:\n",
+    "\n",
+    "\n",
+    "Now write expressions using string s and the indexing operator that evaluate to 'a', 'c',\n",
+    "'z', 'y', and 'q'.\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 9,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "a\n",
+      "c\n",
+      "z\n",
+      "y\n",
+      "q\n"
+     ]
+    }
+   ],
+   "source": [
+    "s = 'abcdefghijklmnopqrstuvwxyz'\n",
+    "print(s[0])\n",
+    "print(s[2])\n",
+    "print(s[-1])\n",
+    "print(s[-2])\n",
+    "print(s[-10])\n",
+    "\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### 2.14 Start by executing\n",
+    "    s = 'goodbye'\n",
+    "    Then write a Boolean expression that check whether:\n",
+    "        (a) The first character of string s is 'g'\n",
+    "        (b) The seventh character of s is g\n",
+    "        (c) The first two characters of s are g and a\n",
+    "        (d) The next to last character of s is x\n",
+    "        (e) The midle character of s is d\n",
+    "        (f) The first and last characters of string s are equal\n",
+    "        (g) The last 4 characters of string s match the string 'tion'\n",
+    "        Note: These seven statements should evaluate to True, False, False, False, True, False,\n",
+    "        and False, respectively."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 16,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "(a): True\n",
+      "(b): False\n",
+      "(c): False\n",
+      "(d): False\n",
+      "(e): True\n",
+      "(f): False\n",
+      "(g): False\n"
+     ]
+    }
+   ],
+   "source": [
+    "s = 'goodbye'\n",
+    "print('(a):',(s[0]=='g'))\n",
+    "print('(b):',(s[6]=='g'))\n",
+    "print('(c):',(s[0]=='g' and s[1]=='a'))\n",
+    "print('(d):',(s[-2]=='x'))\n",
+    "print('(e):',(s[3]=='d'))\n",
+    "print('(f):',s[0]==s[-1])\n",
+    "print('(g):',s[3:]=='tion')"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### 2.15 Write Python expressions corresponding to these statements:\n",
+    "    (a) The number of characters in the word \"anachronistically\" is 1 more than the number\n",
+    "    of characters in the word \"counterintuitive.\"\n",
+    "\n",
+    "    (b) The word \"misinterpretation\" appears earlier in the dictionary than the word \"misrep-\n",
+    "    resentation.\"\n",
+    "\n",
+    "    (c) The letter \"e\" does not appear in the word \"floccinaucinihilipilification.\"\n",
+    "    (d) The number of characters in the word \"counterrevolution\" is equal to the sum of the\n",
+    "    number of characters in words \"counter\" and \"resolution.\""
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 58,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "True\n",
+      "True\n",
+      "True\n",
+      "True\n"
+     ]
+    }
+   ],
+   "source": [
+    "a1=\"anachronistically\" \n",
+    "a2=\"counterintuitive\"\n",
+    "\n",
+    "print((len(a1))==len(a2)+1)\n",
+    "\n",
+    "a3=[\"misinterpretation\",\"misrepresentation\"]\n",
+    "\n",
+    "a3.sort()\n",
+    "print(a3.index(\"misinterpretation\")<a3.index(\"misrepresentation\"))\n",
+    "\n",
+    "a4=\"floccinaucinihilipilification\"\n",
+    "print('e' not in a4)\n",
+    "\n",
+    "print(len(\"counterrevolution\")==len(\"counter\" + \"resolution\"))"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### 2.16 Write the corresponding Python assignment statements:\n",
+    " \n",
+    "    (a) Assign 6 to variable a and 7 to variable b.\n",
+    "    (b) Assign to variable c the average of variables a and b.\n",
+    "    (c) Assign to variable inventory the list containing strings 'paper', 'staples', and\n",
+    "    'pencils'.\n",
+    "    (d) Assign to variables first, middle and last the strings 'John', 'Fitzgerald',\n",
+    "    and 'Kennedy'.\n",
+    "    (e) Assign to variable fullname the concatenation of string variables first, middle,\n",
+    "    and last. Make sure you incorporate blank spaces appropriately."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 10,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "a= 6\n",
+      "b= 7\n",
+      "average: 6.5\n",
+      "['paper', 'staples', 'pencils']\n",
+      "fullname:  John Fitzgerald kennedy\n"
+     ]
+    }
+   ],
+   "source": [
+    "\n",
+    "a=6\n",
+    "b=7\n",
+    "\n",
+    "print('a=',a)\n",
+    "print('b=',b)\n",
+    "\n",
+    "c= (a+b)/2\n",
+    "print('average:',c)\n",
+    "\n",
+    "inventory=['paper', 'staples', 'pencils']\n",
+    "print(inventory)\n",
+    "\n",
+    "first='John'\n",
+    "middle='Fitzgerald'\n",
+    "last='kennedy'\n",
+    "\n",
+    "fullname= first+' '+middle+' '+last\n",
+    "print('fullname: ',fullname)\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### 2.17 Using variables defined in Exercise 2.16, write Boolean expressions corresponding to the following logical statements and evaluate  the expressions\n",
+    "       evaluate the expressions:\n",
+    "    (a) The sum of 17 and -9 is less than 10.\n",
+    "    (b) The length of list inventory is more than five times the length of string fullname.\n",
+    "    (c) c is no more than 24.\n",
+    "    (d) 6.75 is between the values of integers a and b.\n",
+    "    (e) The length of string middle is larger than the length of string first and smaller\n",
+    "    than the length string last.\n",
+    "    (f) Either the list inventory is empty or it has more than 10 objects in it."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 13,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "(a):  True\n",
+      "(b):  False\n",
+      "(c):  True\n",
+      "(d):  True\n",
+      "(e):  False\n",
+      "(a):  False\n"
+     ]
+    }
+   ],
+   "source": [
+    "print('(a): ',17+-9<10)\n",
+    "print('(b): ',len(inventory)>(5*len(fullname)))\n",
+    "print('(c): ',c<=24)\n",
+    "print('(d): ',a<6.75<b)\n",
+    "print('(e): ',len(first)<len(middle)<len(last))\n",
+    "print('(a): ',len(inventory)==0 or len(inventory)>10)\n",
+    "\n",
+    "\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### 2.18 Write Python statements corresponding to the following:\n",
+    "\n",
+    "    (a) Assign to variable flowers a list containing strings 'rose', 'bougainvillea',\n",
+    "    'yucca', 'marigold', 'daylilly', and 'lilly of the valley'.\n",
+    "    (b) Write a Boolean expression that evaluates to True if string 'potato' is in list\n",
+    "    flowers, and evaluate the expression.\n",
+    "    (c) Assign to list thorny the sublist of list flowers consisting of the first three objects\n",
+    "    in the list.\n",
+    "    (d) Assign to list poisonous the sublist of list flowers consisting of just the last object\n",
+    "    of list flowers.\n",
+    "    (e) Assign to list dangerous the concatenation of lists thorny and poisonous."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 61,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "\n",
+      " ['rose', 'bougainvillea', 'yucca', 'marigold', 'daylilly', 'lilly']\n",
+      "\n",
+      "  False\n",
+      "\n",
+      " ['rose', 'bougainvillea', 'yucca']\n",
+      "\n",
+      " ['lilly']\n",
+      "\n",
+      " ['rose', 'bougainvillea', 'yucca', 'lilly']\n"
+     ]
+    }
+   ],
+   "source": [
+    "flowers=['rose', 'bougainvillea','yucca', 'marigold', 'daylilly', 'lilly']\n",
+    "print('\\n',flowers)\n",
+    "\n",
+    "print('\\n ','potato' in flowers)\n",
+    "\n",
+    "thorny=flowers[:3]\n",
+    "print('\\n',thorny)\n",
+    "\n",
+    "poisonous=[flowers[-1]]\n",
+    "print('\\n',poisonous)\n",
+    "\n",
+    "dangerous=thorny+poisonous\n",
+    "print('\\n',dangerous)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### 2.19 Start by assigning to variable answers a list containing an arbitrary sequence of strings 'Y' and 'N'. For example:\n",
+    "    answers = ['Y', 'N', 'N', 'Y', 'N', 'Y', 'Y', 'Y', 'N', 'N', 'N']\n",
+    "    Write Python statements corresponding to the following:\n",
+    "        (a) Assign to variable numYes the number of occurrences of 'Y' in list answers.\n",
+    "        (b) Assign to variable numNo the number of occurrences of 'N' in list answers.\n",
+    "        (c) Assign to variable percentYes the percentage of strings in answers that are 'Y'.\n",
+    "        (d) Sort the list answers.\n",
+    "        (e) Assign to variable f the index of the first occurrence of 'Y' in sorted list answers.\n",
+    "\n",
+    "\n",
+    "\n",
+    "\n",
+    "\n",
+    "\n",
+    "\n",
+    "\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 43,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "(a):  5\n",
+      "(b):  6\n",
+      "(c):  45.45454545454545\n",
+      "(d): ['N', 'N', 'N', 'N', 'N', 'N', 'Y', 'Y', 'Y', 'Y', 'Y']\n",
+      "(d): 6\n"
+     ]
+    }
+   ],
+   "source": [
+    "answers = ['Y', 'N', 'N', 'Y', 'N', 'Y', 'Y', 'Y', 'N', 'N', 'N']\n",
+    "\n",
+    "numYes=answers.count('Y')\n",
+    "print('(a): ',numYes)\n",
+    "\n",
+    "numNo=answers.count('N')\n",
+    "print('(b): ',numNo)\n",
+    "\n",
+    "percentYes=(numYes/len(answers)*100)\n",
+    "print('(c): ',percentYes )\n",
+    "\n",
+    "answers.sort()\n",
+    "print('(d):',answers)\n",
+    "\n",
+    "f=answers.index('Y')\n",
+    "print('(d):',f)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### 2.20 Write an expression involving a three-letter string s that evaluates to a string whose characters are the characters of s in reverse order. If s is 'top', the expression should evaluate to 'pot'.\n",
+    "\n",
+    "\n",
+    "\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 68,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      " DNA\n"
+     ]
+    }
+   ],
+   "source": [
+    "s = 'AND'\n",
+    "r = ' '\n",
+    "\n",
+    "for i in s[-1::-1]:\n",
+    "    r = r+i\n",
+    "\n",
+    "print(r)\n",
+    "\n",
+    "\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### 2.21 Write an expression involving strings s and t containing the last name and the first name, respectively, of a person that evaluates to the person’s initials. If the two strings contained the first and last name of this book’s author, the expression would evaluate to 'LP'.\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 70,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "AN\n"
+     ]
+    }
+   ],
+   "source": [
+    "s= 'Archana'\n",
+    "t= 'Narayanan'\n",
+    "initial= s[0]+t[0]\n",
+    "print(initial)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### 2.22 The range of a list of numbers is the largest difference between any two numbers in the list. Write a Python expression that computes the range of a list of numbers lst. If the list lst is, say, [3, 7, -2, 12], the expression should evaluate to 14 (the difference between 12 and −2).\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 87,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "60\n"
+     ]
+    }
+   ],
+   "source": [
+    "lst=[2,4,-5,55,-2,1]\n",
+    "x=[]\n",
+    "for i in lst:\n",
+    "    for j in lst:\n",
+    "        d = i-j\n",
+    "        x.append(d)\n",
+    "print(max(x))"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### 2.23 Start by assigning to variables monthsL and monthsT a list and a tuple, respectively, both containing strings 'Jan', 'Feb', 'Mar', and 'May', in that order. Then attempt the following with both containers:\n",
+    "    (a) Insert string 'Apr' between 'Mar' and 'May'.\n",
+    "    (b) Append string 'Jun'.\n",
+    "    (c) Pop the container.\n",
+    "    (d) Remove the second item in the container.\n",
+    "    (e) Reverse the order of items in the container.\n",
+    "    (f) Sort the container.\n",
+    "Note: when attempting these on tuple monthsT you should expect errors.\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 21,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "['Jan', 'Feb', 'Apr', 'Mar', 'May']\n",
+      "['Jan', 'Feb', 'Apr', 'Mar', 'May', 'Jun']\n",
+      "['Jan', 'Feb', 'Apr', 'Mar', 'May']\n",
+      "['Jan', 'Apr', 'Mar', 'May']\n",
+      "['May', 'Mar', 'Apr', 'Jan']\n",
+      "['Apr', 'Jan', 'Mar', 'May']\n"
+     ]
+    }
+   ],
+   "source": [
+    "monthsL=['Jan', 'Feb', 'Mar', 'May']\n",
+    "monthsT=('Jan', 'Feb', 'Mar', 'May')\n",
+    "\n",
+    "monthsL.insert(-2,'Apr')\n",
+    "print(monthsL)\n",
+    "\n",
+    "monthsL.append('Jun')\n",
+    "print(monthsL)\n",
+    "\n",
+    "monthsL.pop(5)\n",
+    "print(monthsL)\n",
+    "\n",
+    "monthsL.pop(1)\n",
+    "print(monthsL)\n",
+    " \n",
+    "monthsL= monthsL[-1::-1]\n",
+    "print(monthsL)\n",
+    "\n",
+    "monthsL.sort()\n",
+    "print(monthsL)\n",
+    "\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 101,
+   "metadata": {},
+   "outputs": [
+    {
+     "ename": "AttributeError",
+     "evalue": "'tuple' object has no attribute 'insert'",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+      "\u001b[0;31mAttributeError\u001b[0m                            Traceback (most recent call last)",
+      "\u001b[0;32m<ipython-input-101-c51744a4af09>\u001b[0m in \u001b[0;36m<module>\u001b[0;34m()\u001b[0m\n\u001b[0;32m----> 1\u001b[0;31m \u001b[0mmonthsT\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0minsert\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m-\u001b[0m\u001b[0;36m2\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;34m'Apr'\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m      2\u001b[0m \u001b[0mprint\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mmonthsT\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      3\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      4\u001b[0m \u001b[0mmonthsT\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mappend\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m'Jun'\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      5\u001b[0m \u001b[0mprint\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mmonthsT\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+      "\u001b[0;31mAttributeError\u001b[0m: 'tuple' object has no attribute 'insert'"
+     ]
+    }
+   ],
+   "source": [
+    "monthsT.insert(-2,'Apr')\n",
+    "print(monthsT)\n",
+    "\n",
+    "monthsT.append('Jun')\n",
+    "print(monthsT)\n",
+    "\n",
+    "monthsT.pop(5)\n",
+    "print(monthsT)\n",
+    "\n",
+    "monthsT.pop(1)\n",
+    "print(monthsT)\n",
+    " \n",
+    "monthsT= monthsL[-1::-1]\n",
+    "print(monthsT)\n",
+    "\n",
+    "monthsT.sort()\n",
+    "print(monthsT)\n",
+    "\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### 2.24 Start by assigning to variable grades a list containing an arbitrary sequence of grades(strings) 'A', 'B', 'C', 'D', and 'F'. For example:\n",
+    "            \n",
+    "            grades = ['B','B','F','C','B','A','A','D','C','D','A','A','B']\n",
+    "   \n",
+    "       Write a sequence of Python statements that ultimately produce a list count that contains\n",
+    "       the numbers of occurrences of each grade in list grades in alphabetic order. For the given\n",
+    "       example, the list count should be [4, 4, 2, 2, 1]."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 129,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "['A', 'A', 'A', 'A', 'B', 'B', 'B', 'B', 'C', 'C', 'D', 'D', 'F']\n",
+      "[4, 4, 2, 2, 1]\n"
+     ]
+    }
+   ],
+   "source": [
+    "grades = ['B','B','F','C','B','A','A','D','C','D','A','A','B']\n",
+    "dupli=[]\n",
+    "count=[]\n",
+    "\n",
+    "grades.sort()\n",
+    "print(grades)\n",
+    "m=grades[0]\n",
+    "for i in grades:\n",
+    "    n=grades.count(i)\n",
+    "    if i not in dupli:\n",
+    "        count.append(n)\n",
+    "        dupli.append(i)\n",
+    "print(count)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### 2.25 Repeat Problem 2.24 with the following modification: variable grades is defined to be of type tuple rather than of type list:\n",
+    "        grades = ('B','B','F','C','B','A','A','D','C','D','A','A','B')\n",
+    "    Variable count should still refer to a list."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 132,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "('B', 'B', 'F', 'C', 'B', 'A', 'A', 'D', 'C', 'D', 'A', 'A', 'B')\n",
+      "[4, 1, 2, 4, 2]\n"
+     ]
+    }
+   ],
+   "source": [
+    " grades = ('B','B','F','C','B','A','A','D','C','D','A','A','B')\n",
+    "dupli=[]\n",
+    "count=[]\n",
+    "\n",
+    "\n",
+    "print(grades)\n",
+    "m=grades[0]\n",
+    "for i in grades:\n",
+    "    n=grades.count(i)\n",
+    "    if i not in dupli:\n",
+    "        count.append(n)\n",
+    "        dupli.append(i)\n",
+    "print(count)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "###  2.26 A dartboard of radius 10 and the wall it is hanging on are represented using the two-dimensional coordinate system, with the board’s center at coordinate (0, 0). Variables x and y store the x- and y-coordinate of a dart hit. Write an expression using variables x and y that evaluates to True if the dart hits (is within) the dartboard, and evaluate the expression for these dart coordinates:\n",
+    "    (a) (0, 0)\n",
+    "    (b) (10, 10)\n",
+    "    (c) (6, −6)\n",
+    "    (d) (−7, 8)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "True\n",
+      "False\n",
+      "True\n",
+      "True\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(0**2+0**2 <100)\n",
+    "print(10**2+10**2 <100)\n",
+    "print(6**2+ -6**2<100)\n",
+    "print(-7**2+8**2<100)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### 2.27 A ladder put up right against a wall will fall over unless put up at a certain angle less than 90 degrees. Given variables length and angle storing the length of the ladder and the angle that it forms with the ground as it leans against the wall, write a Python expression involving length and angle that computes the height reached by the ladder. Evaluate the expression for these values of length and angle:\n",
+    "        (a) 16 feet and 75 degrees\n",
+    "        (b) 20 feet and 0 degrees\n",
+    "        (c) 24 feet and 45 degrees\n",
+    "        (d) 24 feet and 80 degrees\n",
+    "    Note: You will need to use the trig formula:\n",
+    "\n",
+    "    height = length ∗ sin(angle)\n",
+    "\n",
+    "    The math module sin() function takes its input in radians. You will thus need to convert\n",
+    "    the angle given in degrees to the angle given in radians using:\n",
+    "\n",
+    "    radians = π ∗ degrees/ 180\n",
+    "\n",
+    "\n",
+    "    \n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 7,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "15.454813220625093\n"
+     ]
+    }
+   ],
+   "source": [
+    "import math\n",
+    "length=16\n",
+    "degree=75\n",
+    "angle=math.pi*degree/180\n",
+    "height=length* math.sin(angle)\n",
+    "print(height)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 9,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "0.0\n"
+     ]
+    }
+   ],
+   "source": [
+    "length=20\n",
+    "degree=0\n",
+    "angle=math.pi*degree/180\n",
+    "height=length* math.sin(angle)\n",
+    "print(height)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 11,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "16.97056274847714\n"
+     ]
+    }
+   ],
+   "source": [
+    "length=24\n",
+    "degree=45\n",
+    "angle=math.pi*degree/180\n",
+    "height=length* math.sin(angle)\n",
+    "print(height)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 10,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "23.63538607229299\n"
+     ]
+    }
+   ],
+   "source": [
+    "length=24\n",
+    "degree=80\n",
+    "angle=math.pi*degree/180\n",
+    "height=length* math.sin(angle)\n",
+    "print(height)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### 2.28 Write the relevant Python expression or statement, involving a list of numbers lst and using list operators and methods for these specifications:\n",
+    "        (a) An expression that evaluates to the index of the middle element of lst\n",
+    "        (b) An expression that evaluates to the middle element of lst\n",
+    "        (c) A statement that sorts the list lst in descending order\n",
+    "        (d) A statement that removes the first number of list lst and puts it at the end\n",
+    "     \n",
+    "      Note: If a list has even length, then the middle element is defined to be the rightmost of the\n",
+    "      two elements in the middle of the list.  \n",
+    "\n",
+    "\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "    len(lst)//2\n",
+    "    lst[len(lst)//2]\n",
+    "    lst.sort(reverse=True)\n",
+    "    lst.append(lst.pop(0))"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "\n",
+    "### 2.29 Add one or more pairs of parentheses to each expression so that it evaluates to True.\n",
+    "                (a) 0 == 1 == 2\n",
+    "                (b) 2 + 3 == 4 + 5 == 7\n",
+    "                (c) 1 < -1 == 3 > 4\n",
+    "    For each expression, explain in what order the operators were evaluated.\n",
+    "\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 18,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "True\n",
+      "True\n",
+      "True\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(0 == (1 == 2))\n",
+    "print((2 + (3 == 4) + 5) == 7)\n",
+    "print((1 < -1) == (3 > 4))"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### 2.30 Using an example of your own, explicitly convert some string to a list. Describe, in your own words, the behavior of the list constructor on a string input."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 19,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "['hello', 'world']\n"
+     ]
+    }
+   ],
+   "source": [
+    "a= 'hello world'\n",
+    "print(a.split())"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### 2.31 In this chapter we have covered some, but not all, methods of class list. Using the following interactive session as an aid, explain in your own words what the list methods extend(), copy(), and clear() do.\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "    Method list concatenates the given arguments  to the list.\n",
+    "    Method copy returns a copy of the list.\n",
+    "    Method clear makes the list empty.\n"
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.6.5"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 2
+}
